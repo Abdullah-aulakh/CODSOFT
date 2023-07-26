@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build and Run then Run Output",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Build and Run",
+                "Run Output"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Build and Run",
+            "command": "g++",
+            "args": [
+                "${workspaceFolder}/*.cpp",
+                "-o",
+                "${workspaceFolder}/output"
+            ],
+            "type": "shell",
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Output",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "start",
+                "cmd",
+                "/c",
+                "${workspaceFolder}/output.exe & pause"
+            ],
+            "type": "shell",
+            "problemMatcher": []
+        }
+    ]
+}

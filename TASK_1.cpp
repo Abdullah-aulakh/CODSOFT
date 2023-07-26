@@ -25,7 +25,7 @@ int main(){
     int answer=generate_num(start,end);
 
     int guess;
-    cout<<"\t\t\t-------------NUMBER GUESSING GAME-------------"<<"\n\n";
+    cout<<"\t\t\t-------------NUMBER69 GUESSING GAME-------------"<<"\n\n";
     cout<<"Guess a Number between "<<start<<" and "<<end<<" (inclusive)\n\n";
     
     while(true){
